@@ -1,0 +1,205 @@
+/*
+@font-face{
+    font-family="Name of Font";
+    src="../assets/fonts/calibri.otf";
+}
+*/
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: calibri;
+    font-size: 1em;
+}
+body{
+    background-image: url(../images/Back-to-School-Wallpaper-Widescreen.jpg);
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.error{
+    color:#ff8080;
+    font-size:120%;
+    font-weight:600;
+    text-shadow:0px 0px 10px black;
+}
+.login-area{
+    position: absolute;
+    top: 45%;
+    left:0;
+    width:100%;
+    transform: translate(0,-50%);
+/*    //background: url(../images/login.jpg) white no-repeat;
+    background-position: right;
+    background-size: cover;
+*/    /*        radial-gradient(at bottom right, white, white);*/
+    height: 450px;
+    opacity: .9;
+}
+.container{
+    position: absolute;
+    top:50%;
+    left:30%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    color:white;
+    padding:50px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow:1px 1px 10px black;
+    background-image: radial-gradient(at top right, dodgerblue, mediumslateblue);
+}
+.container h3{
+    font-size:130%;
+    padding-bottom:20px;
+    text-align:center;
+}
+.login-area .container .forget{
+    text-align: center;
+    font-size: 110%;
+    letter-spacing: .8px;
+    transition: .5s;
+}
+.login-area .container .forget:hover{
+    text-decoration: underline;
+    transform: scale(1.1, 1.1);
+}
+.login-area .container hr{
+    width:120%;
+    margin-left:-10%;
+
+}
+.login-area .container .signup-link{
+    text-align: center;
+    padding-top:10px;
+    font-size: 110%;
+    letter-spacing: .8px;
+    transition:.5s;
+}
+.login-area .container .signup-link:hover{
+    transform: scale(1.1, 1.1);
+}
+.login-form label{
+    font-size: 120%;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.login-form input{
+    padding: 9px 7px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 250px;
+    font-size: 110%;
+    border: 0px solid white;
+    box-shadow:1px 2px 5px black;
+}
+.login-form button{
+    width: 250px;
+    margin: 15px 0px 0px 0px;
+    padding: 10px 5px;
+    font-size: 125%;
+    font-weight: 600;
+    color: dodgerblue;
+    border-radius: 25px;
+    background-color:white;
+    border: 0px solid white; /* radial-gradient(at bottom right, #165ca1, #74a9dd);*/
+    cursor: pointer;
+    transition: .5s;
+    box-shadow:1px 2px 5px black;
+}
+.login-form .btn-login{
+    animation: login-btn-hover-reverse .5s forwards;
+}
+.login-form .btn-login:hover{
+    animation: login-btn-hover .8s forwards;
+    transform: scale(1.05, 1.05);
+
+}
+.login-form .btn-cancel{
+    animation: cancel-login-btn-hover-reverse .5s forwards;
+}
+.login-form .btn-cancel:hover{
+    transform: scale(1.05, 1.05);
+    animation: cancel-login-btn-hover .8s forwards;
+}
+
+@-webkit-keyframes login-btn-hover {
+    from { background-color: white; color:dodgerblue; }
+    to { background-color:dodgerblue; color:white; }
+}
+@-o-keyframes login-btn-hover {
+    from { background-color: white; color:dodgerblue; }
+    to { background-color:dodgerblue; color:white; }
+}
+@-moz-keyframes login-btn-hover {
+    from { background-color: white; color:dodgerblue; }
+    to { background-color:dodgerblue; color:white; }
+}
+@keyframes login-btn-hover {
+    from { background-color: white; color:dodgerblue; }
+    to { background-color:dodgerblue; color:white; }
+}
+
+/* reverse */
+@-webkit-keyframes login-btn-hover-reverse {
+    from { background-color: dodgerblue; color:white; }
+    to { background-color:white; color:dodgerblue; }
+}
+@-o-keyframes login-btn-hover-reverse {
+    from { background-color: dodgerblue; color:white; }
+    to { background-color:white; color:dodgerblue; }
+}
+@-moz-keyframes login-btn-hover-reverse {
+    from { background-color: dodgerblue; color:white; }
+    to { background-color:white; color:dodgerblue; }
+}
+@keyframes login-btn-hover-reverse {
+    from { background-color: dodgerblue; color:white; }
+    to { background-color:white; color:dodgerblue; }
+}
+
+@-webkit-keyframes cancel-login-btn-hover {
+    from { background-color: white; color:dodgerblue; }
+    to { background-color:#27b345; color:white; }
+}
+@-o-keyframes cancel-login-btn-hover {
+    from { background-color: white; color:dodgerblue; }
+    to { background-color:#27b345; color:white; }
+}
+@-moz-keyframes cancel-login-btn-hover {
+    from { background-color: white; color:dodgerblue; }
+    to { background-color:#27b345; color:white; }
+}
+@keyframes cancel-login-btn-hover {
+    from { background-color: white; color:dodgerblue; }
+    to { background-color:#27b345; color:white; }
+}
+/* reverse */
+@-webkit-keyframes cancel-login-btn-hover-reverse {
+    from { background-color: #27b345; color:white; }
+    to { background-color:white; color:dodgerblue; }
+}
+@-o-keyframes cancel-login-btn-hover-reverse {
+    from { background-color: #27b345; color:white; }
+    to { background-color:white; color:dodgerblue; }
+}
+@-moz-keyframes cancel-login-btn-hover-reverse {
+    from { background-color: #27b345; color:white; }
+    to { background-color:white; color:dodgerblue; }
+}
+@keyframes cancel-login-btn-hover-reverse {
+    from { background-color: #27b345; color:white; }
+    to { background-color:white; color:dodgerblue; }
+}
+@media screen and (max-width: 920px) {
+    .container{
+        left: 50%;
+        top: 60%;
+    }    
+}
