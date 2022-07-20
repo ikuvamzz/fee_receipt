@@ -2,11 +2,11 @@
 	ob_start(); //Turns on output buffering
 	$timezone = date_default_timezone_set("Asia/Kolkata");
     session_start();
-
-    $db_host = "localhost";
-    $db_user = "root";
-    $db_pass = "";
-    $db_name = "fee_receipt";
+    $db_urls = parse_url(getenv('DATABASE_URL'));
+    $db_host = $db_urls["host"];
+    $db_user = $db_urls["user"];
+    $db_pass = $db_urls["pass"];
+    $db_name = ltrim($db_urls["path"],'/');
 
     $db_con = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
